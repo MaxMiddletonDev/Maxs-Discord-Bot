@@ -6,14 +6,17 @@ class General(commands.Cog):
   def __init__(self, bot):
         self.bot = bot
 
+  #HELP COMMAND
   @commands.command()
   async def cmds(self, ctx):
     help = discord.Embed(
       title = "COMMANDS",
       description = """
-      $cmds⠀⠀⠀⠀⠀⠀⠀| Shows this help message\n
-      $kanyequote⠀⠀⠀| Generates a Random Kanye Quote\n
-      $hello⠀⠀⠀⠀⠀⠀⠀| The bot says hello\n
+      $cmds | Shows this help message\n
+      $kanyequote | Generates a Random Kanye Quote\n
+      $hello | The bot says hello\n
+      $flipacoin | (mention someone) (call)\n
+      $teamgen | (amount of teams) (mention) (mention) etc..
       """,
       color = discord.Color.blue(), 
     )
