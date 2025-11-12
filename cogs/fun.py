@@ -20,7 +20,6 @@ class Fun(commands.Cog):
         quote = await get_kanye_quote()
         await ctx.send(quote)
 
-
     @commands.command()
     async def hello(self, ctx):
         await ctx.send(f"Hello {ctx.author.mention}!")
@@ -47,4 +46,4 @@ class Fun(commands.Cog):
       await ctx.send(message)
       
 async def setup(bot):
-    await bot.add_cog(Fun(bot))
+  await bot.add_cog(Fun(bot))

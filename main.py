@@ -17,7 +17,7 @@ async def setup_hook():
 
 @bot.event
 async def on_ready():
-  print(f'Stand Ready for {bot.user} Arrival')
+  print(f'Stand Ready for {bot.user} Arrival Worm')
 
 keep_alive()
 bot.run(os.getenv('TOKEN'))
