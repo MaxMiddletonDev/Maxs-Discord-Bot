@@ -11,20 +11,14 @@ async def get_kanye_quote():
       return (quote)
 
 class Fun(commands.Cog):
-    
     def __init__(self, bot):
         self.bot = bot
-
+    
     #KANYE QUOTE COMMAND
     @commands.command()
     async def kanyequote(self, ctx):
         quote = await get_kanye_quote()
         await ctx.send(quote)
-
-    #HELLO COMMAND
-    @commands.command()
-    async def hello(self, ctx):
-        await ctx.send(f"Hello {ctx.author.mention}!")
       
     #FLIP A COIN COMMAND
     @commands.command()

@@ -4,7 +4,7 @@ import aiohttp
 
 class General(commands.Cog):
   def __init__(self, bot):
-        self.bot = bot
+    self.bot = bot
 
   #HELP COMMAND
   @commands.command()
@@ -12,15 +12,26 @@ class General(commands.Cog):
     help = discord.Embed(
       title = "COMMANDS",
       description = """
+      GENERAL
+      --------
       $cmds | Shows this help message\n
+      $hello | The bot says hello\n\n
+      FUN
+      --------
       $kanyequote | Generates a Random Kanye Quote\n
-      $hello | The bot says hello\n
       $flipacoin | (mention someone) (call)\n
-      $teamgen | (amount of teams) (mention) (mention) etc..
+      $teamgen | (amount of teams) (mention) (mention) etc..\n\n
+      UTILITY
+      --------
       """,
       color = discord.Color.blue(), 
     )
     await ctx.send(embed = help)
+
+    #HELLO COMMAND
+    @commands.command()
+    async def hello(self, ctx):
+        await ctx.send(f"Hello {ctx.author.mention}!")
 
 async def setup(bot):
     await bot.add_cog(General(bot))
