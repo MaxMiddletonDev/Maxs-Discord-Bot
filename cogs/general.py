@@ -23,15 +23,17 @@ class General(commands.Cog):
       $teamgen | (amount of teams) (mention) (mention) etc..\n\n
       UTILITY
       --------
+      $ping | Gets the ping of the bot\n
+      $whois | Gives details on the mention of a user
       """,
       color = discord.Color.blue(), 
     )
     await ctx.send(embed = help)
 
-    #HELLO COMMAND
-    @commands.command()
-    async def hello(self, ctx):
-        await ctx.send(f"Hello {ctx.author.mention}!")
+  #HELLO COMMAND
+  @commands.command()
+  async def hello(self, ctx):
+    await ctx.send(f"Hello {ctx.author.mention}!")
 
 async def setup(bot):
     await bot.add_cog(General(bot))
