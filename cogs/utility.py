@@ -23,9 +23,9 @@ class Utility(commands.Cog):
       color = member.color,
     )
     whoisinfo.set_thumbnail(url = member.display_avatar.url)
-    whoisinfo.add_field(name = "USERNAME", value = str(member), inline=True)
-    whoisinfo.add_field(name = "ID", value = member.id, inline=True)
-    whoisinfo.add_field(name = "JOINED", value = discord.utils.format_dt(member.joined_at, style='R'), inline = True)
+    whoisinfo.add_field(name = "USERNAME", value = str(member), inline = True)
+    whoisinfo.add_field(name = "ID", value = member.id, inline = True)
+    whoisinfo.add_field(name = "JOINED", value = discord.utils.format_dt(member.joined_at, style = 'R'), inline = True)
     
     await ctx.send(embed = whoisinfo)
   

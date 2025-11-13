@@ -19,8 +19,9 @@ class General(commands.Cog):
       FUN
       --------
       $kanyequote | Generates a Random Kanye Quote\n
-      $flipacoin | (mention someone) (call)\n
-      $teamgen | (amount of teams) (mention) (mention) etc..\n\n
+      $flipacoin | Flips a coin: (mention someone) (call)\n
+      $eightball | Simulates an 8Ball based on your input\n
+      $teamgen | Generate a team: (amount of teams) (mention) (mention) etc..\n\n
       UTILITY
       --------
       $ping | Gets the ping of the bot\n
